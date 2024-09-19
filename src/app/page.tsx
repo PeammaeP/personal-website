@@ -1,7 +1,11 @@
+import HeroSection from "./components/hero-section";
+
 export default function Home() {
   return (
-    <header className="font-medium gap-6 p-6">
-      <h1>Hello World !</h1>
-    </header>
+    <main className="flex g-10 p-10 flex-col min-h-screen bg-[#080808]">
+      <div className="container">
+        <HeroSection />
+      </div>
+    </main>
   );
 }
