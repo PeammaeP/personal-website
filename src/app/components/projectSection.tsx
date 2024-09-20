@@ -53,7 +53,7 @@ const ProjectSection = () => {
 
   return (
     <div className="">
-      <h2 className="flex flex-col justify-center text-4xl items-center font-bold font-mono mt-4">
+      <h2 className="flex flex-col justify-center text-4xl items-center font-bold font-mono mt-4 mb-4">
         Projects
       </h2>
       <div className="flex flex-row gap-4 px-6 py-6 justify-center">
@@ -73,7 +73,7 @@ const ProjectSection = () => {
           tagName="App"
         />
       </div>
-      <div className="flex flex-row row-end-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-6 py-6">
         {filteredProject.map((project) => (
           <ProjectCard
             id={project.id}
