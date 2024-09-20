@@ -11,11 +11,11 @@ const TAB_DATA = [
     description: (
       <div className="pl-2">
         <ul>
-          <li className="text-bold">C</li>
-          <li className="text-bold">C++</li>
-          <li className="text-bold">Java</li>
-          <li className="text-bold">JavaScript</li>
-          <li className="text-bold">TypeScript</li>
+          <li className="text-bold mt-2">C</li>
+          <li className="text-bold mt-2">C++</li>
+          <li className="text-bold mt-2">Java</li>
+          <li className="text-bold mt-2">JavaScript</li>
+          <li className="text-bold mt-2">TypeScript</li>
         </ul>
       </div>
     ),
@@ -26,10 +26,14 @@ const TAB_DATA = [
     description: (
       <div className="pl-2">
         <ul>
-          <li>Building Siriraj Hospital Chatbot Competition</li>
-          <li>TEDxMahidolU Website</li>
-          <li>Java GUI Game : Propositum Game</li>
-          <li>ETL Cryptocurrency Data</li>
+          <li className="text-bold mt-2">
+            Building Siriraj Hospital Chatbot Competition
+          </li>
+          <li className="text-bold mt-2"> TEDxMahidolU Website</li>
+          <li className="text-bold mt-2">Java GUI Game : Propositum Game</li>
+          <li className="text-bold mt-2">
+            Building Pipeline & ELT Online Transaction Data{" "}
+          </li>
         </ul>
       </div>
     ),
@@ -53,7 +57,7 @@ const AboutSection = () => {
           alt="tedxmahidolu"
           width={700}
           height={700}
-          className="h-full object-cover"
+          className="h-full object-cover hover:-translate-y-3"
         />
         <div className="text-white font-mono">
           <h1 className="text-4xl mb-4 mt-4 font-bold">About Me</h1>
