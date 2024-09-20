@@ -54,7 +54,7 @@ const ProjectSection = () => {
   return (
     <div className="">
       <h2 className="flex flex-col justify-center text-4xl items-center font-bold font-mono mt-4">
-        Project
+        Projects
       </h2>
       <div className="flex flex-row gap-4 px-6 py-6 justify-center">
         <TagComponent
