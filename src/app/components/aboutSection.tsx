@@ -41,9 +41,10 @@ const TAB_DATA = [
   },
 ];
 
+// @typescript-eslint/no-unused-vars
 const AboutSection = () => {
   const [tab, setTab] = useState("Skills");
-  const [isPending, startTransition] = useTransition();
+  const [, startTransition] = useTransition();
 
   const handleTabChange = (statusName: string) => {
     startTransition(() => {

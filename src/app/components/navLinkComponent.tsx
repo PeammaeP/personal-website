@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-// @ts-ignore
+// @ts-expect-error : type can be "any"
 const NavComponent = ({ title, link }) => {
   {
     /* Add the padding to make the button more space */
