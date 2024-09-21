@@ -44,7 +44,7 @@ const projectData = [
 const ProjectSection = () => {
   const [tag, setTag] = useState("All");
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref, { once: false });
 
   const handleTagChange = (myTag: string) => {
     setTag(myTag);
@@ -84,7 +84,7 @@ const ProjectSection = () => {
       <ul ref={ref} className="grid grid-cols-1 md:grid-cols-2 gap-6 px-6 py-6">
         {filteredProject.map((project, index) => (
           <motion.li
-            key={index}
+            key={`${tag}-${index}`}
             variants={cardVariants}
             initial="initial"
             animate={isInView ? "animate" : "initial"}
