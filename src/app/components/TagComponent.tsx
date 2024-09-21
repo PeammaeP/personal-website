@@ -1,10 +1,9 @@
 // @ts-expect-error : parameter can be any of the type
-const TagComponent = ({ selectedTab, isActive, tagName }) => {
-  const buttonComponent = isActive ? "bg-[#151515]" : "";
+const TagComponent = ({ selectedTab, tagName }) => {
   return (
     <button
       onClick={() => selectedTab(tagName)}
-      className={`text-white rounded-full border-2 border-l-white px-6 py-6 text-xl w-2/12 hover:bg-[#121212] ${buttonComponent}`}
+      className="btn btn-primary w-1/12 text-2xl bg-[#121212] hover:bg-[#181818] border-white hover:border-white rounded-full"
     >
       <p>{tagName}</p>
     </button>

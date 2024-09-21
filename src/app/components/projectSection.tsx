@@ -59,17 +59,17 @@ const ProjectSection = () => {
       <div className="flex flex-row gap-4 px-6 py-6 justify-center">
         <TagComponent
           selectedTab={handleTagChange}
-          isActive={tag === "All"}
+          // isActive={tag === "All"}
           tagName="All"
         />
         <TagComponent
           selectedTab={handleTagChange}
-          isActive={tag === "Web"}
+          // isActive={tag === "Web"}
           tagName="Web"
         />
         <TagComponent
           selectedTab={handleTagChange}
-          isActive={tag === "App"}
+          // isActive={tag === "App"}
           tagName="App"
         />
       </div>
