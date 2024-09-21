@@ -57,7 +57,7 @@ const AboutSection = () => {
           alt="tedxmahidolu"
           width={700}
           height={700}
-          className="h-full object-cover hover:-translate-y-3"
+          className="h-full object-cover hover:-translate-y-3 rounded-t-xl rounded-b-xl"
         />
         <div className="text-white font-mono">
           <h1 className="text-4xl mb-4 mt-4 font-bold">About Me</h1>
