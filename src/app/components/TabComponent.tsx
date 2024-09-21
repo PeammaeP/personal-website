@@ -6,9 +6,7 @@ const TabComponent = ({ selectedTab, isActive, tabName }) => {
 
   return (
     <button onClick={selectedTab}>
-      <p className={`mr-5 text-xl font-bold ${buttonProperty}`}>
-        {tabName}
-      </p>
+      <p className={`mr-5 text-xl font-bold ${buttonProperty}`}>{tabName}</p>
     </button>
   );
 };

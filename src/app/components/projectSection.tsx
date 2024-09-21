@@ -62,7 +62,7 @@ const ProjectSection = () => {
 
   return (
     <section id="projects">
-      <h2 className="flex flex-col justify-center text-4xl items-center font-bold font-mono mt-4 mb-4 text-white">
+      <h2 className="flex flex-col justify-center text-4xl items-center font-bold font-mono mt-4 mb-4 text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-yellow-200">
         Projects
       </h2>
       <div className="flex flex-row gap-4 px-6 py-6 justify-center">

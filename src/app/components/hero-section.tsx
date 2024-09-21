@@ -64,7 +64,7 @@ const HeroSection = () => {
           className="col-span-7 place-content-center text-center sm:text-left "
         >
           <h1 className="font-mono hover:-translate-y-2 grid font-bold mb-4 text-5xl">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-yellow-200">
               Hello, I{"'"}m
             </span>
             <TypeAnimation
@@ -84,12 +84,12 @@ const HeroSection = () => {
           </p>
           <div className="sm:mt-6 mt-5 lg:mt-4">
             <button
-              className="px-5 py-4 w-full sm:w-fit font-bold rounded-full bg-transparent text-black hover:bg-[#edeaea] mr-5 mt-3 font-mono hover:-translate-y-2 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500"
+              className="px-5 py-4 w-full sm:w-fit font-bold rounded-full bg-transparent text-black hover:bg-[#edeaea] mr-5 mt-3 font-mono hover:-translate-y-2 bg-gradient-to-br from-teal-400 to-yellow-200"
               onClick={() => handleSayHello()}
             >
               Say Hello
             </button>
-            <button className="px-1 py-1 w-full sm:w-fit font-bold rounded-full hover:bg-[#1f1e1e] mt-5 hover:-translate-y-2 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500">
+            <button className="px-1 py-1 w-full sm:w-fit font-bold rounded-full hover:bg-[#1f1e1e] mt-5 hover:-translate-y-2 bg-gradient-to-br from-teal-400 to-yellow-200">
               <span className="font-mono block bg-[#080808] rounded-full hover:bg-slate-800 px-5 py-3 text-white">
                 <Link href="https://www.canva.com/design/DAF8HUGnvIQ/pdsJW16_6FTtsC1JMuSRiQ/edit?utm_content=DAF8HUGnvIQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
                   Download CV
