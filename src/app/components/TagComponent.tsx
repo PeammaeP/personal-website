@@ -4,7 +4,7 @@ const TagComponent = ({ selectedTab, isActive, tagName }) => {
   return (
     <button
       onClick={() => selectedTab(tagName)}
-      className={`rounded-full border-2 border-l-white px-6 py-6 text-xl w-2/12 hover:bg-[#121212] ${buttonComponent}`}
+      className={`text-white rounded-full border-2 border-l-white px-6 py-6 text-xl w-2/12 hover:bg-[#121212] ${buttonComponent}`}
     >
       <p>{tagName}</p>
     </button>
