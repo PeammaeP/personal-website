@@ -11,7 +11,7 @@ const projectData = [
     id: 1,
     title: "Siriraj Chatbot AI Hackathon",
     description:
-      "I have experienced in developing all features in this game which use Java Frameworks such as GUI , Object-Oriented and Functional Programming Style.",
+      " I have built a Chatbot about Siriraj Chatbot in order to answer the general question of the patients which required to give the answer correctly with the Siriraj Hospital Dataset.",
     image: "/images/siriraj-chatbot.png",
     tag: ["All", "Web"],
   },
@@ -35,7 +35,7 @@ const projectData = [
     id: 4,
     title: "Propositum Game ( Java GUI )",
     description:
-      "I have experienced in developing all features in this game which use Java Frameworks such as GUI , Object-Oriented and Functional Programming Style",
+      "I have experienced in developing all features in this game which use Java Frameworks such as GUI , Object-Oriented and Functional Programming Style.",
     image: "/images/java-game.png",
     tag: ["All", "App"],
   },
