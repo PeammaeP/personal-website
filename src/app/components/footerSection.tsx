@@ -36,19 +36,19 @@ const FooterSection = () => {
                   Navigation
                 </div>{" "}
                 <a
-                  href="#xxx"
+                  href="#about"
                   className="hover:underline font-bold font-mono text-white"
                 >
                   About Me
                 </a>{" "}
                 <a
-                  href="#xxx"
+                  href="#projects"
                   className="hover:underline font-bold font-mono text-white"
                 >
                   Projects
                 </a>{" "}
                 <a
-                  href="#xxx"
+                  href="#contact"
                   className="hover:underline font-bold font-mono text-white"
                 >
                   Contact

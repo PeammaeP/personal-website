@@ -8,7 +8,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 
 const MyMenuNavLink = [
   { title: "About Me", link: "#about" },
-  { title: "Projects", link: "#project" },
+  { title: "Projects", link: "#projects" },
   { title: "Contact", link: "#contact" },
 ];
 

@@ -51,7 +51,7 @@ const AboutSection = () => {
     });
   };
   return (
-    <section className="text-white">
+    <section id="about" className="text-white">
       <div className="md:grid md:grid-cols-2 gap-10 items-center py-8 px-4 xl:gap-16 sm:py-16">
         <motion.div
           whileHover={{ scale: [null, 1, 1.1] }}
