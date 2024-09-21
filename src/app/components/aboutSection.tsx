@@ -63,7 +63,7 @@ const AboutSection = () => {
             alt="tedxmahidolu"
             width={700}
             height={700}
-            className="h-full object-cover hover:-translate-y-3 rounded-t-xl rounded-b-xl"
+            className="h-full object-cover rounded-t-xl rounded-b-xl"
           />
         </motion.div>
         <div className="text-white font-mono">
