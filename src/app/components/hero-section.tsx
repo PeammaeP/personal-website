@@ -25,6 +25,7 @@ const HeroSection = () => {
               speed={50}
               style={{ fontSize: "1em", display: "inline-block" }}
               repeat={Infinity}
+              className="text-white"
             />
           </h1>
           <p className="py-4 pr-2 font-mono font-semibold text-white text-lg text-left">
@@ -38,7 +39,7 @@ const HeroSection = () => {
               Github Pages
             </button>
             <button className="px-1 py-1 w-full sm:w-fit font-bold rounded-full hover:bg-[#1f1e1e] mt-5 hover:-translate-y-2 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500">
-              <span className="font-mono block bg-[#080808] rounded-full hover:bg-slate-800 px-5 py-3">
+              <span className="font-mono block bg-[#080808] rounded-full hover:bg-slate-800 px-5 py-3 text-white">
                 Download CV
               </span>
             </button>
