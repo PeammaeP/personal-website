@@ -4,7 +4,7 @@ import React from "react";
 import ProjectCard from "./projectCard";
 import TagComponent from "./TagComponent";
 import { useState, useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import { AnimatePresence, motion, useInView } from "framer-motion";
 
 const projectData = [
   {
@@ -45,6 +45,7 @@ const ProjectSection = () => {
   const [tag, setTag] = useState("All");
   const ref = useRef(null);
   const isInView = useInView(ref, { once: false });
+  const [selectedId, setSelectedId] = useState("");
 
   const handleTagChange = (myTag: string) => {
     setTag(myTag);
@@ -60,7 +61,7 @@ const ProjectSection = () => {
   };
 
   return (
-    <section>
+    <section id="projects">
       <h2 className="flex flex-col justify-center text-4xl items-center font-bold font-mono mt-4 mb-4 text-white">
         Projects
       </h2>
@@ -84,11 +85,13 @@ const ProjectSection = () => {
       <ul ref={ref} className="grid grid-cols-1 md:grid-cols-2 gap-6 px-6 py-6">
         {filteredProject.map((project, index) => (
           <motion.li
+            layoutId={`${tag}-${index}`}
             key={`${tag}-${index}`}
             variants={cardVariants}
             initial="initial"
             animate={isInView ? "animate" : "initial"}
             transition={{ duration: 0.3, delay: index * 0.4 }}
+            onClick={() => setSelectedId(`${tag}-${index}`)}
           >
             <ProjectCard
               key={project.id}

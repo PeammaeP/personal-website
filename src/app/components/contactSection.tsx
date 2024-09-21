@@ -13,7 +13,7 @@ import { motion } from "framer-motion";
 
 const ContactSection = () => {
   return (
-    <div className="grid grid-cols-2 mt-4 p-6">
+    <div id="contact" className="grid grid-cols-2 mt-4 p-6">
       <div className="mt-2">
         <h2 className="flex flex-row justify-center items-center text-white text-4xl font-bold font-mono">
           Let{"'"}s Connect
