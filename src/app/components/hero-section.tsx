@@ -2,10 +2,50 @@
 
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
+import { useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
 const HeroSection = () => {
+  const [sayHelloClicked, setSayHelloClicked] = useState(false);
+
+  const emojiVariants = {
+    initial: { opacity: 0, scale: 0 },
+    animate: (i: number) => ({
+      opacity: 1,
+      scale: [1, 1.5, 1],
+      y: [-20, 0],
+      transition: { delay: i * 0.1, duration: 0.6, ease: "easeOut" },
+    }),
+    exit: { opacity: 0, scale: 0, transition: { duration: 0.5 } },
+  };
+
+  const emojis = [
+    "👋",
+    "😊",
+    "💻",
+    "🚀",
+    "🎉",
+    "👋",
+    "😊",
+    "💻",
+    "🚀",
+    "🎉",
+    "👋",
+    "😊",
+    "💻",
+    "🚀",
+    "🎉",
+  ];
+
+  const handleSayHello = () => {
+    setSayHelloClicked(true);
+
+    setTimeout(() => {
+      setSayHelloClicked(false);
+    }, 3000);
+  };
+
   return (
     <section>
       <div className="py-8 grid grid-col-1 sm:grid-cols-12">
@@ -21,13 +61,7 @@ const HeroSection = () => {
               Hello, I{"'"}m
             </span>
             <TypeAnimation
-              sequence={[
-                // Same substring at the start will only be typed out once, initially
-                "Peam",
-                1000, // wait 1s before replacing "Mice" with "Hamsters"
-                "Tech Enthusiate",
-                1000,
-              ]}
+              sequence={["Peam", 1000, "Tech Enthusiate", 1000]}
               wrapper="span"
               speed={50}
               style={{ fontSize: "1em", display: "inline-block" }}
@@ -42,8 +76,11 @@ const HeroSection = () => {
             positively impact the field.
           </p>
           <div className="sm:mt-6 mt-5 lg:mt-4">
-            <button className="px-5 py-4 w-full sm:w-fit font-bold rounded-full bg-transparent text-black hover:bg-[#edeaea] mr-5 mt-3 font-mono hover:-translate-y-2 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500">
-              Github Pages
+            <button
+              className="px-5 py-4 w-full sm:w-fit font-bold rounded-full bg-transparent text-black hover:bg-[#edeaea] mr-5 mt-3 font-mono hover:-translate-y-2 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500"
+              onClick={() => handleSayHello()}
+            >
+              Say Hello
             </button>
             <button className="px-1 py-1 w-full sm:w-fit font-bold rounded-full hover:bg-[#1f1e1e] mt-5 hover:-translate-y-2 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500">
               <span className="font-mono block bg-[#080808] rounded-full hover:bg-slate-800 px-5 py-3 text-white">
@@ -53,6 +90,26 @@ const HeroSection = () => {
               </span>
             </button>
           </div>
+          {sayHelloClicked && (
+            <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center pointer-events-none">
+              {emojis.map((emoji, index) => (
+                <motion.span
+                  key={index}
+                  variants={emojiVariants}
+                  initial="initial"
+                  animate="animate"
+                  custom={index}
+                  className="absolute text-5xl"
+                  style={{
+                    top: `${Math.random() * 80}%`,
+                    left: `${Math.random() * 80}%`,
+                  }}
+                >
+                  {emoji}
+                </motion.span>
+              ))}
+            </div>
+          )}
         </motion.div>
         {/* make the division */}
         <motion.div
