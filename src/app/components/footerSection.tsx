@@ -24,7 +24,7 @@ const FooterSection = () => {
                   speed={50}
                   style={{ fontSize: "1em", display: "inline-block" }}
                   repeat={Infinity}
-                  className="text-white"
+                  className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-yellow-200"
                 />
               </div>
             </div>

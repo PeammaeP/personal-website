@@ -67,7 +67,9 @@ const AboutSection = () => {
           />
         </motion.div>
         <div className="text-white font-mono">
-          <h1 className="text-4xl mb-4 mt-4 font-bold">About Me</h1>
+          <h1 className="text-4xl mb-4 mt-4 font-bold text-transparent bg-clip-text bg-gradient-to-tr from-teal-400 to-yellow-200">
+            About Me
+          </h1>
           <p className="font-mono text-base">
             I{"'"}m currently studying in Computer Engineering , Mahidol
             University. I{"'"}m fascinated by how machine learning can analyze

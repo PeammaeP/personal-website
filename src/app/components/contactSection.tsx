@@ -15,7 +15,7 @@ const ContactSection = () => {
   return (
     <div id="contact" className="grid grid-cols-2 mt-4 p-6">
       <div className="mt-2">
-        <h2 className="flex flex-row justify-center items-center text-white text-4xl font-bold font-mono">
+        <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-yellow-200 flex flex-row justify-center items-cente text-4xl font-bold font-mono">
           Let{"'"}s Connect
         </h2>
         <p className="font-mono mt-6 text-lg text-white flex flex-row justify-center items-center rounded text-left">
