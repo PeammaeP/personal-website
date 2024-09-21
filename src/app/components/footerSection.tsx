@@ -2,6 +2,7 @@
 
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
+import { motion } from "framer-motion";
 
 const FooterSection = () => {
   return (
@@ -34,13 +35,22 @@ const FooterSection = () => {
                 <div className="font-bold uppercase text-[#9ca3af] pb-3 font-mono text-xl">
                   Navigation
                 </div>{" "}
-                <a href="#xxx" className="hover:underline font-bold font-mono text-white">
+                <a
+                  href="#xxx"
+                  className="hover:underline font-bold font-mono text-white"
+                >
                   About Me
                 </a>{" "}
-                <a href="#xxx" className="hover:underline font-bold font-mono text-white">
+                <a
+                  href="#xxx"
+                  className="hover:underline font-bold font-mono text-white"
+                >
                   Projects
                 </a>{" "}
-                <a href="#xxx" className="hover:underline font-bold font-mono text-white">
+                <a
+                  href="#xxx"
+                  className="hover:underline font-bold font-mono text-white"
+                >
                   Contact
                 </a>{" "}
               </div>
