@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -40,7 +41,9 @@ const HeroSection = () => {
             </button>
             <button className="px-1 py-1 w-full sm:w-fit font-bold rounded-full hover:bg-[#1f1e1e] mt-5 hover:-translate-y-2 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500">
               <span className="font-mono block bg-[#080808] rounded-full hover:bg-slate-800 px-5 py-3 text-white">
-                Download CV
+                <Link href="https://www.canva.com/design/DAF8HUGnvIQ/pdsJW16_6FTtsC1JMuSRiQ/edit?utm_content=DAF8HUGnvIQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+                  Download CV
+                </Link>
               </span>
             </button>
           </div>

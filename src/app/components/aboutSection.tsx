@@ -67,7 +67,7 @@ const AboutSection = () => {
             data and solve complex problems. I have experienced in Data
             Engineering Project with Apache Spark , Apache Airflow , Google
             Cloud Services and Website Developing Project with TypeScript ,
-            NestJS and Database MongoDB
+            NestJS and Database MongoDB.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabComponent
