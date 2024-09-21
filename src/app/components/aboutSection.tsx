@@ -3,6 +3,7 @@
 import Image from "next/image";
 import TabComponent from "./TabComponent";
 import { useState, useTransition } from "react";
+import { motion } from "framer-motion";
 
 const TAB_DATA = [
   {
@@ -52,13 +53,19 @@ const AboutSection = () => {
   return (
     <section className="text-white">
       <div className="md:grid md:grid-cols-2 gap-10 items-center py-8 px-4 xl:gap-16 sm:py-16">
-        <Image
-          src="/images/tedx.png"
-          alt="tedxmahidolu"
-          width={700}
-          height={700}
-          className="h-full object-cover hover:-translate-y-3 rounded-t-xl rounded-b-xl"
-        />
+        <motion.div
+          whileHover={{ scale: [null, 1, 1.1] }}
+          transition={{ duration: 0.3 }}
+          className=""
+        >
+          <Image
+            src="/images/tedx.png"
+            alt="tedxmahidolu"
+            width={700}
+            height={700}
+            className="h-full object-cover hover:-translate-y-3 rounded-t-xl rounded-b-xl"
+          />
+        </motion.div>
         <div className="text-white font-mono">
           <h1 className="text-4xl mb-4 mt-4 font-bold">About Me</h1>
           <p className="font-mono text-base">

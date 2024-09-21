@@ -3,13 +3,19 @@
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
     <section>
       <div className="py-8 grid grid-col-1 sm:grid-cols-12">
         {/* make the first 7 col  */}
-        <div className="col-span-7 place-content-center text-center sm:text-left ">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8 }}
+          className="col-span-7 place-content-center text-center sm:text-left "
+        >
           <h1 className="font-mono hover:-translate-y-2 grid font-bold mb-4 text-5xl">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
               Hello, I{"'"}m
@@ -47,10 +53,27 @@ const HeroSection = () => {
               </span>
             </button>
           </div>
-        </div>
+        </motion.div>
         {/* make the division */}
-        <div className="col-span-5 place-self-center mt-6 lg:mt-0">
-          <div className="hover:-translate-y-2 rounded-full bg-[#161515] w-[270px] h-[270px]">
+        <motion.div
+          animate={{
+            scale: [1, 1.4, 1.4, 1, 1],
+            rotate: [0, 0, 180, 180, 0],
+            borderRadius: ["0%", "0%", "50%", "50%", "0%"],
+          }}
+          transition={{
+            duration: 2,
+            ease: "easeInOut",
+            times: [0, 0.2, 0.5, 0.8, 1],
+            repeatDelay: 1,
+          }}
+          className="col-span-5 place-self-center mt-6 lg:mt-0"
+        >
+          <motion.div
+            whileHover={{ scale: [null, 1.2, 1.3] }}
+            transition={{ duration: 0.3 }}
+            className="hover:-translate-y-2 rounded-full bg-[#161515] w-[270px] h-[270px]"
+          >
             {/* using absolute transform to make the image fit with circle */}
             <Image
               src="/images/myImageDisplay.png"
@@ -59,8 +82,8 @@ const HeroSection = () => {
               width={180}
               height={180}
             />
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
     </section>
   );

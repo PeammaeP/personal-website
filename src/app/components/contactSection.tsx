@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,6 +9,7 @@ import {
   faMedium,
 } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const ContactSection = () => {
   return (
@@ -36,14 +39,19 @@ const ContactSection = () => {
           </Link>
         </div>
       </div>
-      <Image
-        src="/images/statue.png"
-        alt="status"
-        width={550}
-        height={400}
-        className="ml-10 rounded-t-xl rounded-b-xl hover:-translate-y-3"
-      ></Image>
-      <div className="flex flex-row mt-2 gap-2"></div>
+      <motion.div
+        className=""
+        whileHover={{ scale: [null, 1, 1.05] }}
+        transition={{ duration: 0.3 }}
+      >
+        <Image
+          src="/images/statue.png"
+          alt="statue"
+          width={550}
+          height={400}
+          className="ml-10 rounded-t-xl rounded-b-xl"
+        ></Image>
+      </motion.div>
     </div>
   );
 };
